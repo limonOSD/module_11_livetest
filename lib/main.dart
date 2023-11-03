@@ -34,7 +34,7 @@ class _WeatherListState extends State<WeatherList> {
   }
 
   void fetchData() async {
-    final String data = await rootBundle.loadString('assets/weather_data.json');
+    final String data = await rootBundle.loadString('asset/weather_data.json');
     List<dynamic> jsonList = json.decode(data);
 
     List<Weather> weatherList =
